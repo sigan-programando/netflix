@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de gastos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="Formulario.php" method="get">
+        <h1>Mi gestor de gastos</h1>
+    <label for="Fecha">Ingrese la fecha:</label>
+    <input type="date" id="Fecha" name="Fecha" required> <br> <br>
+    <label for="Descripción">Ingrese una descripción sobre el gasto:</label>
+    <input type="text" name="Descripción" id="Descripción" required> <br> <br>
+    <label for="Categoría">Seleccione la categoría del gasto:</label>
+    <select name="Categoría" id="Categoría">
+        <option value="Alimentos">Alimentos</option>
+        <option value="Transporte">Transporte</option>
+        <option value="Entretenimiento">Entretenimiento</option>
+        <option value="Facturas">Facturas</option>
+        <option value="Hogar">Hogar</option>
+    </select> <br> <br>
+    <label for="Monto">Ingrese el monto gastado:</label>
+    <input type="number" name="Monto" id="Monto"> <br> <br>
+    <label for="Frecuencia">Ingrese la frecuencia del gasto:</label>
+    <select name="Frecuencia" id="Frecuencia">
+        <option value="Diaria">Diaria</option>
+        <option value="Semanal">Semanal</option>
+        <option value="Mensual">Mensual</option>
+    </select> <br> <br>
+    <input type="submit" name="submit" value="Sumar gasto"> 
+    </form>  
+</body>
+
+</html>
